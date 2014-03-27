@@ -1,0 +1,30 @@
+<head>
+  <title>Chaty Cathy</title>
+</head>
+
+<body>
+  {{loginButtons align="left"}}<br>
+  <h1>Chatapp</h1>
+  {{> welcome }}
+  {{> input}}
+  <div id="chatbox">
+    {{> messages}}
+  </div>
+</body>
+
+<template name="welcome">
+
+  <p>
+    Welcome to our application that will allow users to chat with one another seamlessly over the internet.
+  </p>
+</template>
+
+<template name="messages">
+  {{#each messages}}
+    <strong>{{name}}: </strong>{{message}}<br>
+  {{/each}}
+</template>
+
+<template name="input">
+  <p>Messages: <input type="text" id="message"></p>
+</template>

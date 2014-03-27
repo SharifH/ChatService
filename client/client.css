@@ -1,0 +1,21 @@
+html{
+  padding: 10px;
+  font-family: Verdana, sans-serif;
+}
+
+body{
+  padding: 40px;
+}
+
+#chatbox{
+  padding: 5px;
+  background-color: gray;
+  border: 2px solid black;
+  border-radius: 15px;
+  min-height: 500px;
+
+}
+
+.login-button-dropdown-align-right{
+  float: right;
+}
